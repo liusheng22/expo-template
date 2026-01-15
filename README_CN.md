@@ -2,7 +2,7 @@
 
 [English](README.md) | 中文说明
 
-一个面向实际项目的 Expo 起步模板，内置路由、NativeWind 样式与基础演示页面（主题切换、常用组件示例、Modal 示例）。
+一套开箱即用的 Expo 起步模板，精简但完整，内置路由、NativeWind 样式、ESLint/Prettier 规范与常用 UI 演示（主题切换、常用组件示例、Modal 示例）。
 
 ## 亮点
 
@@ -10,6 +10,14 @@
 - NativeWind + Prettier 插件（Tailwind 风格开发体验）
 - 基础导航依赖齐全（`@react-navigation/*`、`react-native-gesture-handler`、`react-native-screens`）
 - ESLint 与 Prettier 配置对齐（Expo 配置）
+
+## 技术栈
+
+- Expo + Expo Router
+- React Native + React
+- NativeWind（Tailwind 风格）
+- ESLint + Prettier
+- TypeScript
 
 ## 使用模板创建新项目
 

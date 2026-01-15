@@ -2,7 +2,7 @@
 
 English | [中文说明](README_CN.md)
 
-A production-ready Expo starter with routing, NativeWind styling, and a clean set of demo screens (theme toggle, common UI components, and modal usage).
+A ready-to-use Expo starter that stays lean but complete, with routing, NativeWind styling, ESLint/Prettier, and practical UI demos (theme toggle, common components, and modal usage).
 
 ## Highlights
 
@@ -10,6 +10,14 @@ A production-ready Expo starter with routing, NativeWind styling, and a clean se
 - NativeWind + Prettier plugin for Tailwind-style workflows
 - Navigation essentials ready (`@react-navigation/*`, `react-native-gesture-handler`, `react-native-screens`)
 - ESLint + Prettier aligned via Expo config
+
+## Tech stack
+
+- Expo + Expo Router
+- React Native + React
+- NativeWind (Tailwind-style)
+- ESLint + Prettier
+- TypeScript
 
 ## Create a new project from this template
 
