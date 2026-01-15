@@ -45,12 +45,23 @@ export default function HomeScreen() {
                 : 'mb-6 rounded-3xl bg-white p-6 shadow-sm'
             }
           >
-            <Text className={isDark ? 'text-3xl font-semibold text-white' : 'text-3xl font-semibold text-slate-900'}>
+            <Text
+              className={
+                isDark
+                  ? 'text-3xl font-semibold text-white'
+                  : 'text-3xl font-semibold text-slate-900'
+              }
+            >
               Expo Starter Template
             </Text>
-            <Text className={isDark ? 'mt-2 text-base leading-6 text-slate-300' : 'mt-2 text-base leading-6 text-slate-600'}>
-              A clean, minimal foundation with curated patterns to kick-start
-              your next app.
+            <Text
+              className={
+                isDark
+                  ? 'mt-2 text-base leading-6 text-slate-300'
+                  : 'mt-2 text-base leading-6 text-slate-600'
+              }
+            >
+              A clean, minimal foundation with curated patterns to kick-start your next app.
             </Text>
           </View>
         }
@@ -62,10 +73,20 @@ export default function HomeScreen() {
                 : 'mb-4 rounded-2xl bg-white p-5 shadow-sm'
             }
           >
-            <Text className={isDark ? 'text-lg font-semibold text-white' : 'text-lg font-semibold text-slate-900'}>
+            <Text
+              className={
+                isDark ? 'text-lg font-semibold text-white' : 'text-lg font-semibold text-slate-900'
+              }
+            >
               {item.title}
             </Text>
-            <Text className={isDark ? 'mt-2 text-sm leading-5 text-slate-300' : 'mt-2 text-sm leading-5 text-slate-600'}>
+            <Text
+              className={
+                isDark
+                  ? 'mt-2 text-sm leading-5 text-slate-300'
+                  : 'mt-2 text-sm leading-5 text-slate-600'
+              }
+            >
               {item.description}
             </Text>
           </View>

@@ -5,10 +5,10 @@ import {
   Modal,
   Pressable,
   SafeAreaView,
+  Switch,
   Text,
   TextInput,
   View,
-  Switch,
 } from 'react-native';
 
 import { ThemeMode, useAppTheme } from '@/components/app-theme-provider';
@@ -67,16 +67,20 @@ export default function TabTwoScreen() {
         >
           <Pressable
             className={
-              isDark
-                ? 'w-full rounded-2xl bg-slate-800 p-6'
-                : 'w-full rounded-2xl bg-white p-6'
+              isDark ? 'w-full rounded-2xl bg-slate-800 p-6' : 'w-full rounded-2xl bg-white p-6'
             }
             onPress={() => setIsModalVisible(false)}
           >
-            <Text className={isDark ? 'text-lg font-semibold text-white' : 'text-lg font-semibold text-slate-900'}>
+            <Text
+              className={
+                isDark ? 'text-lg font-semibold text-white' : 'text-lg font-semibold text-slate-900'
+              }
+            >
               Modal Example
             </Text>
-            <Text className={isDark ? 'mt-2 text-sm text-slate-300' : 'mt-2 text-sm text-slate-600'}>
+            <Text
+              className={isDark ? 'mt-2 text-sm text-slate-300' : 'mt-2 text-sm text-slate-600'}
+            >
               Tap outside or this card to close.
             </Text>
           </Pressable>
@@ -96,12 +100,23 @@ export default function TabTwoScreen() {
                   : 'mb-6 rounded-3xl bg-white p-6 shadow-sm'
               }
             >
-              <Text className={isDark ? 'text-2xl font-semibold text-white' : 'text-2xl font-semibold text-slate-900'}>
+              <Text
+                className={
+                  isDark
+                    ? 'text-2xl font-semibold text-white'
+                    : 'text-2xl font-semibold text-slate-900'
+                }
+              >
                 Component Demos
               </Text>
-              <Text className={isDark ? 'mt-2 text-sm leading-5 text-slate-300' : 'mt-2 text-sm leading-5 text-slate-600'}>
-                A quick tour of common Expo UI building blocks, kept simple for
-                easy reuse.
+              <Text
+                className={
+                  isDark
+                    ? 'mt-2 text-sm leading-5 text-slate-300'
+                    : 'mt-2 text-sm leading-5 text-slate-600'
+                }
+              >
+                A quick tour of common Expo UI building blocks, kept simple for easy reuse.
               </Text>
             </View>
 
@@ -112,10 +127,18 @@ export default function TabTwoScreen() {
                   : 'mb-6 rounded-2xl border border-slate-200 bg-white p-5'
               }
             >
-              <Text className={isDark ? 'text-base font-semibold text-white' : 'text-base font-semibold text-slate-900'}>
+              <Text
+                className={
+                  isDark
+                    ? 'text-base font-semibold text-white'
+                    : 'text-base font-semibold text-slate-900'
+                }
+              >
                 Theme Preview
               </Text>
-              <Text className={isDark ? 'mt-2 text-sm text-slate-300' : 'mt-2 text-sm text-slate-600'}>
+              <Text
+                className={isDark ? 'mt-2 text-sm text-slate-300' : 'mt-2 text-sm text-slate-600'}
+              >
                 Current mode: {mode}
               </Text>
               <View
@@ -165,26 +188,50 @@ export default function TabTwoScreen() {
                 : 'mb-4 rounded-2xl bg-white p-5 shadow-sm'
             }
           >
-            <Text className={isDark ? 'text-lg font-semibold text-white' : 'text-lg font-semibold text-slate-900'}>
+            <Text
+              className={
+                isDark ? 'text-lg font-semibold text-white' : 'text-lg font-semibold text-slate-900'
+              }
+            >
               {item.title}
             </Text>
-            <Text className={isDark ? 'mt-2 text-sm leading-5 text-slate-300' : 'mt-2 text-sm leading-5 text-slate-600'}>
+            <Text
+              className={
+                isDark
+                  ? 'mt-2 text-sm leading-5 text-slate-300'
+                  : 'mt-2 text-sm leading-5 text-slate-600'
+              }
+            >
               {item.description}
             </Text>
             <View className="mt-4">
               {item.id === 'button' ? (
                 <View>
                   <Pressable
-                    className={isDark ? 'items-center rounded-xl bg-white px-4 py-3' : 'items-center rounded-xl bg-slate-900 px-4 py-3'}
+                    className={
+                      isDark
+                        ? 'items-center rounded-xl bg-white px-4 py-3'
+                        : 'items-center rounded-xl bg-slate-900 px-4 py-3'
+                    }
                     accessibilityRole="button"
                     accessibilityLabel="Primary action"
                     onPress={() => setPressCount((prev) => prev + 1)}
                   >
-                    <Text className={isDark ? 'text-sm font-semibold text-slate-900' : 'text-sm font-semibold text-white'}>
+                    <Text
+                      className={
+                        isDark
+                          ? 'text-sm font-semibold text-slate-900'
+                          : 'text-sm font-semibold text-white'
+                      }
+                    >
                       Primary Action
                     </Text>
                   </Pressable>
-                  <Text className={isDark ? 'mt-3 text-xs text-slate-300' : 'mt-3 text-xs text-slate-500'}>
+                  <Text
+                    className={
+                      isDark ? 'mt-3 text-xs text-slate-300' : 'mt-3 text-xs text-slate-500'
+                    }
+                  >
                     Pressed: {pressCount} times
                   </Text>
                 </View>
@@ -226,12 +273,22 @@ export default function TabTwoScreen() {
               ) : null}
               {item.id === 'modal' ? (
                 <Pressable
-                  className={isDark ? 'items-center rounded-xl bg-white px-4 py-3' : 'items-center rounded-xl bg-slate-900 px-4 py-3'}
+                  className={
+                    isDark
+                      ? 'items-center rounded-xl bg-white px-4 py-3'
+                      : 'items-center rounded-xl bg-slate-900 px-4 py-3'
+                  }
                   onPress={() => setIsModalVisible(true)}
                   accessibilityRole="button"
                   accessibilityLabel="Open modal"
                 >
-                  <Text className={isDark ? 'text-sm font-semibold text-slate-900' : 'text-sm font-semibold text-white'}>
+                  <Text
+                    className={
+                      isDark
+                        ? 'text-sm font-semibold text-slate-900'
+                        : 'text-sm font-semibold text-white'
+                    }
+                  >
                     Open Modal
                   </Text>
                 </Pressable>
