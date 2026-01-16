@@ -37,6 +37,12 @@ const demos = [
     href: '/demo/list',
   },
   {
+    id: 'layout',
+    title: 'Layout & Grid',
+    description: 'Flex rows, wrap grids, and spacing.',
+    href: '/demo/layout',
+  },
+  {
     id: 'section-list',
     title: 'SectionList',
     description: 'Grouped lists with section headers.',
@@ -86,10 +92,18 @@ export default function DemoIndexScreen() {
                 : 'mb-6 rounded-3xl bg-white p-6 shadow-sm'
             }
           >
-            <Text className={isDark ? 'text-2xl font-semibold text-white' : 'text-2xl font-semibold text-slate-900'}>
+            <Text
+              className={
+                isDark
+                  ? 'text-2xl font-semibold text-white'
+                  : 'text-2xl font-semibold text-slate-900'
+              }
+            >
               Demo Playground
             </Text>
-            <Text className={isDark ? 'mt-2 text-sm text-slate-300' : 'mt-2 text-sm text-slate-600'}>
+            <Text
+              className={isDark ? 'mt-2 text-sm text-slate-300' : 'mt-2 text-sm text-slate-600'}
+            >
               Each example is a separate screen, easy to copy or delete.
             </Text>
           </View>
@@ -105,10 +119,18 @@ export default function DemoIndexScreen() {
               accessibilityRole="button"
               accessibilityLabel={`Open demo ${item.title}`}
             >
-              <Text className={isDark ? 'text-lg font-semibold text-white' : 'text-lg font-semibold text-slate-900'}>
+              <Text
+                className={
+                  isDark
+                    ? 'text-lg font-semibold text-white'
+                    : 'text-lg font-semibold text-slate-900'
+                }
+              >
                 {item.title}
               </Text>
-              <Text className={isDark ? 'mt-2 text-sm text-slate-300' : 'mt-2 text-sm text-slate-600'}>
+              <Text
+                className={isDark ? 'mt-2 text-sm text-slate-300' : 'mt-2 text-sm text-slate-600'}
+              >
                 {item.description}
               </Text>
             </Pressable>
